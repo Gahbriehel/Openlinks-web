@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Openlinks-web/static/css/main.e5eccac5.css",
+    "main.js": "/Openlinks-web/static/js/main.3ae2b854.js",
+    "static/js/453.354ba81a.chunk.js": "/Openlinks-web/static/js/453.354ba81a.chunk.js",
+    "static/media/laptop-bg0.jpg": "/Openlinks-web/static/media/laptop-bg0.155c73d932118536e2e3.jpg",
+    "static/media/background_image.jpeg": "/Openlinks-web/static/media/background_image.7c9d5041740d3e911550.jpeg",
+    "index.html": "/Openlinks-web/index.html",
+    "main.e5eccac5.css.map": "/Openlinks-web/static/css/main.e5eccac5.css.map",
+    "main.3ae2b854.js.map": "/Openlinks-web/static/js/main.3ae2b854.js.map",
+    "453.354ba81a.chunk.js.map": "/Openlinks-web/static/js/453.354ba81a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e5eccac5.css",
+    "static/js/main.3ae2b854.js"
+  ]
+}
