@@ -1,0 +1,511 @@
+@import 'root.css';
+
+.nav_container {
+    width: 100%;
+    background: var(--nav-bg-color);
+    padding: 0 10px;
+    position: fixed;
+    z-index: 1000;
+    margin-bottom: 80px;
+    top: 0;
+    left: 0;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  */
+}
+
+.nav_container .nav_top {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: -40px 0;
+}
+
+.logo {
+    width: 30%;
+}
+
+.logo img {
+    width: 200px;
+    height: 200px;
+    margin-left: 50px;
+}
+
+.search_box {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    margin-right: 2rem;
+}
+
+.search_box input {
+    width: 25rem;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+    background: var(--input-field-bg)
+}
+
+.search_box input:hover {
+    border: 1px solid var(--button-hover);
+}
+
+.search_box button {
+    padding: 8px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.search_box button:hover {
+    border: 1px solid var(--button-hover);
+}
+
+.cart_btn button {
+    padding: 10px 20px;
+    margin-right: 20px;
+    border: none;
+    background-color: var(--nav-bg-color);
+    cursor: pointer;
+    transition: 0.5s;
+    /* color: var(--light-text); */
+    font-size: 21px;
+    display: flex;
+    align-items: center;
+}
+
+.cart_btn button .cart_icon {
+    font-size: 21px;
+    margin-right: 5px;
+}
+
+.cart_btn button span {
+    color: var(--button-hover);
+}
+
+.cart_btn button:hover {
+    background: var(--nav-bg-color);
+    color: var(--primary-accent);
+}
+
+.nav_top_right {
+    display: flex;
+    align-items: center;
+    margin-right: -17rem;
+    width: 30%;
+}
+
+.nav_top_right .cart_btn .cart_link,
+.nav_top_right .account .cart_link {
+    text-decoration: none;
+}
+
+.account button {
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    background-color: var(--nav-bg-color);
+    cursor: pointer;
+    transition: 0.5s;
+    display: flex;
+    font-size: 21px;
+    align-items: center;
+}
+
+.account button:hover {
+    background: var(--nav-bg-color);
+    color: var(--primary-accent);
+}
+
+.account_icon {
+    font-size: 28px;
+    margin-right: 5px;
+}
+
+.nav_bottom ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+}
+
+.nav_bottom ul li {
+    list-style: none;
+}
+
+.nav_bottom ul li .link {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--primary-text-color);
+    transition: 0.5s;
+}
+
+.nav_bottom ul li .link:hover {
+    color: var(--tertiary-accent);
+    font-weight: 700;
+}
+
+.nav_bottom ul li .disabled-link {
+    pointer-events: none;
+    display: none;
+    color: gray;
+}
+
+.nav_bottom {
+    border-bottom: 2px solid var(--secondary-accent);
+}
+
+.nav_bottom ul li .link-active {
+    color: var(--primary-accent);
+}
+
+/* Hidden */
+
+
+.hidden {
+    display: none;
+}
+
+/* Dropdown */
+
+.account_info {
+    position: relative;
+}
+
+.account_info:hover {
+    background: var(--nav-bg-color);
+    color: var(--primary-accent);
+}
+
+.account_info label {
+    cursor: pointer;
+}
+
+.account_box {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    border: 1px solid #ddd;
+    z-index: 1000;
+    width: 170px;
+    text-align: center;
+}
+
+.account_info input[type="checkbox"]:checked+label+.account_box {
+    display: block;
+}
+
+.arrow_up {
+    visibility: hidden;
+}
+
+.account_info input {
+    visibility: hidden;
+}
+
+.account_info label {
+    font-size: 21px;
+}
+
+.account_box .box {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--footer-bg-color);
+    background-color: var(--quaternary-text-color);
+}
+
+.account_box .box .account_links {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 16px;
+    width: 100%;
+
+}
+
+.account_box .box .account_links p {
+    width: 100%;
+    border-bottom: 1px solid var(--button-hover);
+}
+
+.account_box .box .account_links p:hover {
+    background-color: var(--tertiary-text-color);
+}
+
+.account_box .box .account_links .account_text {
+    color: var(--secondary-accent);
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.account_box .box .account_links .account_text .icon {
+    font-size: 22px;
+}
+
+.account_box .box .account_links span {
+    margin-left: 10px;
+}
+
+.account_box .box .cart_link {
+    text-decoration: none;
+    color: var(--primary-text-color);
+    transition: 0.5s;
+}
+
+.account_box .box a:hover {
+    color: var(--tertiary-accent);
+}
+
+.account_box .box form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--error-warning);
+}
+
+.account_box .box form:hover {
+    color: var(--terminate-warning);
+}
+
+.account_box .box form button {
+    background-color: var(--quaternary-text-color);
+    color: var(--secondary-accent);
+    color: var(--error-warning);
+    cursor: pointer;
+    border: none;
+    font-size: 18px;
+}
+
+.account_box .box form button:hover {
+    color: var(--terminate-warning);
+}
+
+
+.account_links .disabled-link * {
+    color: gray;
+    cursor: not-allowed !important;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 1700px) {
+    .nav_top_right {
+        margin-right: -10rem;
+    }
+
+    .search_box {
+        margin-right: 1rem;
+    }
+
+    .nav_top_right .cart_btn button {
+        margin-right: 10px;
+    }
+
+    .nav_top_right .account button {
+        margin-right: 10px;
+    }
+
+    .nav_bottom ul {
+        padding: 2rem 1rem;
+    }
+
+    .nav_bottom ul li .link {
+        font-size: 16px;
+    }
+
+    .nav_bottom ul li .link:hover {
+        font-size: 18px;
+    }
+
+    .nav_bottom ul li .link-active {
+        font-size: 18px;
+    }
+
+    .nav_bottom ul li .disabled-link {
+        display: none;
+    }
+
+    .account_box {
+        width: 150px;
+    }
+
+    .account_box .box .account_links {
+        font-size: 14px;
+    }
+
+    .account_box .box .account_links .account_text {
+        padding: 5px 0;
+    }
+
+    .account_box .box .account_links .account_text .icon {
+        font-size: 18px;
+    }
+
+    .account_box .box form button {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .nav_top_right {
+        margin-right: -8rem;
+    }
+
+    .search_box {
+        margin-right: 1rem;
+    }
+
+    .nav_top_right .cart_btn button {
+        margin-right: 10px;
+    }
+
+    .nav_top_right .account button {
+        margin-right: 10px;
+    }
+
+    .nav_bottom ul {
+        padding: 2rem 1rem;
+    }
+
+    .nav_bottom ul li .link {
+        font-size: 16px;
+    }
+
+    .nav_bottom ul li .link:hover {
+        font-size: 18px;
+    }
+
+    .nav_bottom ul li .link-active {
+        font-size: 18px;
+    }
+
+    .nav_bottom ul li .disabled-link {
+        display: none;
+    }
+
+    .account_box {
+        width: 150px;
+    }
+
+    .account_box .box .account_links {
+        font-size: 14px;
+    }
+
+    .account_box .box .account_links .account_text {
+        padding: 5px 0;
+    }
+
+    .account_box .box .account_links .account_text .icon {
+        font-size: 18px;
+    }
+
+    .account_box .box form button {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .nav_top_right {
+        margin-right: -3rem;
+    }
+
+    .search_box {
+        margin-right: 1rem;
+    }
+
+    .search_box input {
+        width: 20rem;
+    }
+
+    .nav_top_right .cart_btn button {
+        margin-right: 10px;
+    }
+
+    .nav_top_right .account button {
+        margin-right: 10px;
+    }
+
+    .nav_bottom ul {
+        padding: 2rem 1rem;
+    }
+
+    .nav_bottom ul li .link {
+        font-size: 16px;
+    }
+
+    .nav_bottom ul li .link:hover {
+        font-size: 18px;
+    }
+
+    .nav_bottom ul li .link-active {
+        font-size: 18px;
+    }
+
+    .nav_bottom ul li .disabled-link {
+        display: none;
+    }
+
+    .account_box {
+        width: 150px;
+    }
+
+    .account_box .box .account_links {
+        font-size: 14px;
+    }
+
+    .account_box .box .account_links .account_text {
+        padding: 5px 0;
+    }
+
+    .account_box .box .account_links .account_text .icon {
+        font-size: 18px;
+    }
+
+    .account_box .box form button {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .nav_top_right {
+        margin-right: -2rem;
+    }
+
+    .search_box {
+        margin-right: 1rem;
+    }
+
+    .nav_top_right .cart_btn button, .nav_top_right .account .cart_link button, .nav_top_right .account .account_info label span {
+        font-size: 18px;
+    }
+
+    .nav_bottom ul {
+        padding: 2rem 1rem;
+    }
+
+    .nav_bottom ul li .link {
+        font-size: 16px;
+    }
+
+    .nav_bottom ul li .link:hover {
+        font-size: 18px;
+    }
+
+    .account_box {
+        width: 150px;
+    }
+
+    .account_box .box .account_links {
+        font-size: 14px;
+    }
+
+    .account_box .box form button {
+        font-size: 16px;
+    }
+
+    .nav_bottom ul li .link:hover {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,60 @@
+:root {
+    /* General */
+    --primary-accent: #5db34f;
+    --secondary-accent: #28743b;
+    --tertiary-accent: #9cd432;
+
+    /* Backgrounds */
+    --main-bg-color: #f5f9f5;
+    --nav-bg-color: #ffffff;
+    --nav-bg-color-light: #ffffff; /* #275833; */
+    --nav-bg-color-dark: #1d3f25;
+    --footer-bg-color: #1b3923;
+    --input-field-bg: #eaf5e9;
+
+    /* Text colors */
+    --primary-text-color: #333333;
+    --secondary-text-color: #666666;
+    --tertiary-text-color: #9c9999;
+    --quaternary-text-color: #d6d2d2;
+    --light-text-color: #ffffff;
+    --main-text-color: #a99c54;
+    --sup-text-color: #af9e3c;
+
+    /* Borders and Dividers */
+    --border-color: #d6e4d6;
+    --border-orange: rgb(204, 137, 11);
+    --border-light-orange: rgb(218, 170, 83);
+
+    /* Notifications / Highlights */
+    --error-warning: #d9534f;
+    --terminate-warning: #960a05;
+    --success-highlight: #3c763d;
+    --yellow-pop: #da2d2d;
+
+    /* Button */
+    --button-color: #5db34f;
+    --button-color-secondary: #4a8f3f;
+    --button-hover: #28743b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../../../public/images/background_image.jpeg) no-repeat;
+    opacity: 0.2; /* Reduce opacity to 50% */
+    z-index: -1;
+    /* background-position: left; */
+    background-size: cover;
+}

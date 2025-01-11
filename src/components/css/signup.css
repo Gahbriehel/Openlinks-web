@@ -1,0 +1,118 @@
+@import 'root.css';
+
+.signup_container {
+    width: 100%;
+    background: var(--nav-bg-color);
+    padding: 0;
+    color: var(--light-text);
+    margin-top: 220px;
+    padding-bottom: 50px;
+}
+
+.signup_form {
+    margin: auto;
+    width: 50%;
+    padding: 2rem 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+.signup_form input {
+    width: 60%;
+    height: 40px;
+    margin: 5px 0;
+    border: 1px solid var(--button-hover);
+    border-radius: 4px;
+    padding: 4px 15px;
+    /* background: var(--footer-bg-color); */
+    color: var(--primary-text-color );
+}
+
+.signup_form button {
+    padding: 12px 3rem;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 15px;
+    border: 1px solid var(--button-color);
+    background-color: var(--button-color);
+    color: var(--light-text-color);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.signup_form button:hover {
+    background-color: var(--button-hover);
+}
+
+.signup_form form label span {
+    color: var(--error-warning);
+}
+
+
+.signup_form .form_text {
+    width: 60%;
+    margin: auto;
+}
+
+.signup_form .login_text {
+    margin-top: 20px;
+}
+
+.signup_form .login_text span .login {
+    color: var(--primary-text-color);
+    color: var(--error-warning);
+    font-weight: 600;
+}
+
+
+/* Media queries */
+
+@media screen and (max-width: 1280px) {
+    .signup_form {
+        width: 80%;
+    }
+
+    .signup_form input {
+        width: 70%;
+    }
+
+    .signup_form button {
+        padding: 5px 2rem;
+    }
+
+    .signup_form .form_text {
+        width: 50%;
+        font-size: 18px;
+    }
+
+   .error_message {
+       font-size: 17px;
+   }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .signup_form {
+        width: 80%;
+    }
+
+    .signup_form input {
+        width: 70%;
+    }
+
+    .signup_form button {
+        padding: 5px 2rem;
+    }
+
+    .signup_form .form_text {
+        width: 30%;
+        font-size: 16px;
+    }
+
+    .error_message {
+        font-size: 14px;
+    }
+}

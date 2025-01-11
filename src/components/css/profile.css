@@ -1,0 +1,117 @@
+@import 'root.css';
+
+h1, h2, h3 {
+    font-weight: 500;
+}
+
+.profile_container {
+    width: 100%;
+    background: var(--nav-bg-color);
+    padding: 0 2rem;
+    color: var(--light-text);
+    margin-top: 220px;
+    padding-bottom: 50px;
+}
+
+.header {
+    padding: 20px 60px;
+}
+
+
+/* .form_container {
+    text-align: left;
+    margin: 2rem 5rem;
+    margin-right: 50px;
+} */
+
+.form_group {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    margin-left: 80px;
+
+}
+
+.form_group .input_help {
+    font-size: 13px;
+    color: var(--tertiary-text-color);
+}
+
+.form_group label {
+    width: 150px;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.form_group .input_div {
+    flex: 1;
+}
+
+.form_group .input_div input {
+    height: 30px;
+    width: 100%;
+    text-align: left;
+    padding: 0 7px;
+}
+
+
+.form_container hr {
+    border: 1px solid var(--tertiary-text-color);
+    font-weight: 400;
+}
+
+ .profile_form p .file_format {
+    padding: 2px 4px;
+    font-size: 90%;
+    color: #c7254e;
+    background-color: #f9f2f4;
+    border-radius: 4px;
+}
+
+input:disabled {
+    cursor: not-allowed;
+} 
+
+.profile_information {
+    padding: 30px 0;
+}
+
+.delivery_information {
+    padding: 30px 0;
+}
+
+.delivery_information .form_group {
+    padding: 10px 0;
+}
+
+.button {
+    margin-left: 12rem;
+    text-align: left;
+}
+
+.profile_form button {
+    margin: 20px 40px;
+    /* margin-left: 100px; */
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: var(--light-text-color);
+    background-color: var(--button-color);
+    cursor: pointer;
+    border: 1px solid var(--button-color);
+}
+
+.profile_form button:hover {
+    background-color: var(--button-color-secondary);
+}
+
+/* Avatar Image Style*/
+
+.avatar_profile img {
+    margin: auto;
+    border: 1px solid #ccc;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    cursor: pointer;
+}

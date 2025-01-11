@@ -1,0 +1,26 @@
+@import 'root.css';
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    padding: 5px 15px;
+    margin: 0 5px;
+    border: none;
+    background-color: var(--nav-bg-color);
+    cursor: pointer;
+    transition: 0.5s;
+    color: var(--light-text);
+    font-size: 14px;
+    border-radius: 50%;
+}
+
+.pagination button:hover {
+    background: var(--button-hover);
+    color: var(--light-text-color);
+}

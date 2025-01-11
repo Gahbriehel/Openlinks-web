@@ -1,0 +1,234 @@
+@import 'root.css';
+
+.home_container {
+    width: 100%;
+    /* background: var(--nav-bg-color); */
+    padding: 0;
+    color: var(--light-text);
+    margin-top: 220px;
+    padding-bottom: 50px;
+}
+
+.heading {
+    padding: 20px;
+}
+
+.heading .heading_btns button {
+    padding: 7px 12px;
+    color: var(--light-text);
+    background-color: var(--button-hover);
+    margin: 5px 10px;
+    border-radius: 15px;
+}
+
+.main {
+    border-top: 1px solid var(--nav-bg-color);
+    width: 100%;
+    display: flex;
+}
+
+.main .left_side {
+    width: 22%;
+    border-right: 2px solid var(--button-color);
+}
+
+.main .left_side .sort_by {
+    border-bottom: 1px solid var(--button-color);
+    /* height: 40px; */
+    padding: 20px;
+    padding-bottom: 20px;
+}
+
+.main .left_side .sort_by .sort_by_text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+
+}
+
+.main .left_side .sort_by .sort_by_form {
+    margin-left: 20px;
+}
+
+.main .left_side .sort_by .sort_by_form label {
+    margin-left: 5px;
+}
+
+.main .left_side .sort_by .sort_by_form input[type="checkbox"] {
+    color: #1b3923;
+}
+
+
+/* filter here */
+
+.main .left_side .filter_by {
+    border-bottom: 1px solid var(--button-color);
+    /* height: 40px; */
+    padding: 20px;
+    padding-bottom: 20px;
+}
+
+.main .left_side .filter_by .filter_by_text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.main .left_side .filter_by .filter_by_form {
+    margin-left: 20px;
+}
+
+.main .left_side .filter_by .filter_by_form label {
+    margin-left: 5px;
+}
+
+.home_body .home_body_top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--button-color);
+}
+
+.home_body {
+    width: 70%;
+    margin-left: 80px;
+}
+
+.home_body .home_body_top_left ul {
+    display: flex;
+
+    /* justify-content: space-around; */
+}
+
+.home_body .home_body_top_left ul li  {
+    list-style: none;
+    text-decoration: none;
+    color: var(--light-text);
+    font-size: 14px;
+    /* padding-right: 40px; */
+    margin-right: 160px;
+    /* display: none; */
+}
+
+.home_body .home_body_top_right ul {
+    display: flex;
+}
+
+.home_body .home_body_top_right ul li  {
+    list-style: none;
+    text-decoration: none;
+    color: var(--light-text);
+    /* padding-left: 20px; */
+    margin-left: 65px;
+}
+
+.home_body .home_body_top_right ul li button {
+    padding: 5px 10px;
+    border: none;
+    background: var(--button-color);
+    color: var(--light-text);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--light-text);
+    transition: 0.5s;
+}
+
+.icon {
+    font-size: 20px;
+    color: var(--light-text);
+}
+
+/* .main .main_main {
+    width: 80%;
+} */
+
+.products {
+    width: 100%;
+}
+
+.products .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 1700px) {
+    .home_body .home_body_top_left ul li {
+        margin-right: 100px;
+    }
+
+    .home_body .home_body_top_right ul li {
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .home_body .home_body_top_left ul li {
+        margin-right: 50px;
+    }
+
+    .home_body .home_body_top_right ul li {
+        margin-left: 30px;
+    }
+
+    .main .left_side  {
+        width: 18%;
+        font-size: 14px;
+    }
+
+    .home_body {
+        width: 78%;
+        margin-left: 40px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .home_body .home_body_top_left ul li {
+        margin-right: 30px;
+    }
+
+    .home_body .home_body_top_right ul li {
+        margin-left: 20px;
+    }
+
+    .main .left_side  {
+        width: 18%;
+        font-size: 14px;
+    }
+
+    .home_body {
+        width: 78%;
+        margin-left: 40px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .home_body .home_body_top_left ul li {
+        margin-right: 20px;
+    }
+
+    .home_body .home_body_top_right ul li {
+        margin-left: 10px;
+    }
+
+    .main .left_side  {
+        width: 18%;
+        font-size: 14px;
+    }
+
+    .home_body {
+        width: 73%;
+        margin-left: 40px;
+    }
+}
+
